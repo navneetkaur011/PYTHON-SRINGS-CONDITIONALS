@@ -36,8 +36,14 @@ print(text[::-1]) # Output: "hcnarBemirC" (reverses the string)
 print()
 
 print("------Common Built-in Methods------")
-text = "PeDrO aNd PrItAm"
+text = "PeDrO and prItAm"
 print(text.upper())      # "PEDRO AND PRITAM"
 print(text.lower())      # "pedro and pritam"
-print(text.capitalize()) # "Pedro and pritam" (only capitalizes the very first letter)
-print(text.title())      # "Pedro And Pritam" (capitalizes every word)
+print(text.capitalize()) # "PeDrO and prItAm" (only capitalizes the very first letter)
+print(text.title())      # "PeDrO And PrItAm" (capitalizes every word)
+print(text.endswith("tam")) # false because ends with 'tAm' , not 'tam'
+print(text.replace("r","l")) # PeDlO and plItAm
+print(text.replace("PeDrO","Cop")) # Cop and prItAm
+print(text.find("and")) # 7 (index)
+print(text.find("Q")) # -1 (not a valid index)
+print(text.count("r")) # 2 (as 'r' exist two times in the string)
