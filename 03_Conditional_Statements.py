@@ -45,7 +45,7 @@ if username_input == "Monica":
     print("Username verified successfully.")
     
     # Nested if-else block inside the main 'if'
-    # Python only reaches this point if the username matches 'apnacollege'
+    # Python only reaches this point if the username matches 'Monica'
     password_input = input("Enter password: ")
     
     if password_input == "python123":
